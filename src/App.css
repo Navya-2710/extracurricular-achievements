@@ -1,0 +1,104 @@
+/* Reset some default browser styles */
+* {
+  box-sizing: border-box; /* Ensure padding and borders do not affect element width */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Global styles for the entire app */
+html, body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif; /* Clean and modern font */
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); /* Elegant gradient background */
+  color: #333; /* Default text color */
+}
+
+/* Centering the app layout */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures full height for the app */
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+  padding: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+  position: sticky; /* Navbar stays at the top */
+  top: 0; /* Stick to the top */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Footer styles */
+footer {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+  padding: 1rem;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+/* Styling for headings */
+h1, h2, h3, h4, h5, h6 {
+  color: white; /* Heading text color */
+}
+
+/* Link styles */
+.App-link {
+  color: #61dafb; /* Link color */
+  text-decoration: none; /* Remove underline */
+  border: 1px solid #61dafb; /* Adding border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Padding for button-like appearance */
+  transition: background 0.3s, color 0.3s; /* Transition effects for hover */
+}
+
+/* Hover effects for links */
+.App-link:hover {
+  background: rgba(97, 218, 251, 0.2); /* Light background on hover */
+  color: #fff; /* Change text color on hover */
+}
+
+/* Styling for buttons */
+button {
+  background-color: #1976d2; /* Primary button color */
+  color: white; /* Button text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 15px; /* Padding */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Transition for background color */
+}
+
+button:hover {
+  background-color: #155a8a; /* Darker shade on hover */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .App {
+    padding: 1rem; /* Padding on smaller screens */
+  }
+}
+
+/* Logo styles */
+.App-logo {
+  height: 40vmin; /* Responsive height for the logo */
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear; /* Animation for logo */
+  }
+}
+
+/* Logo spin animation */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
